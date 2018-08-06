@@ -22,8 +22,8 @@ export default class App extends React.Component {
         d=d-0.2;
       }
     return{
-      height:this.d,
-      width:this.d,
+      height:d,
+      width:d,
       }
     }
 
