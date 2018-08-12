@@ -18,8 +18,9 @@ export default class App extends React.Component {
   }
 
     logoStyle = function(d){
-      if(d!=50){
+      if(d!=50&& d>10){
         d=d-0.2;
+        logoStyle(d);
       }
     return{
       height:d,
@@ -29,6 +30,7 @@ export default class App extends React.Component {
 
     return (
       <View style={styles.container}>
+      <Text> Amithaoz</Text>
           <Image style={logoStyle(this.state.d)} source={require('./res/munch.png')} />
       </View>
     );
